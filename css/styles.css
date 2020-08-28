@@ -196,3 +196,38 @@ footer {
 [class*="col-"] {
   padding: 1rem;
 }
+@media only screen and (max-width: 575px) {
+  .wrapper {
+    width: 100%;
+  }
+  #contact {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  #contact h2 {
+    font-size: 1.2em;
+  }
+  .cta {
+    display: ;
+  }
+  #home {
+    width: 100%;
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+}
+@media only screen and (max-width: 370px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  #contact .email {
+    font-size: .9em;
+  }
+  
+}
