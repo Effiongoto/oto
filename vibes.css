@@ -1,0 +1,186 @@
+<div class="container-fluid" id="contact">
+      <h2 class="text-center">Need a responsive, mobile-ready website?</h2>
+      <h2 class="text-center"><span>Let's work together!</span></h2>
+      <a id="email" href="mailto:hi@lesleyhogg.com" target="_blank">effiongoto98@gmail.com</a> <br>
+        <a href="https://www.linkedin.com/in/oto-obong-effiong-8a81151b0/"><i class="fab fa-linkedin social"></i></a>
+        <a href="https://twitter.com/iamoto"><i class="fab fa-twitter social"></i></a>
+        <a href="https://github.com/Effiongoto"><i class="fab fa-github social"></i></a>
+    </div>
+  .square {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid var(--purple);
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+    transition:box-shadow .5s;
+  }
+
+  .square::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+  .square:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+  }
+
+  .square img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+
+  .wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+   }
+ 
+       .wrapper > * {
+         grid-column: 3 / 11;
+       }
+ 
+   img {
+     max-width: 100%;
+   }
+
+   .work {
+    background: var(--gray);
+    height: auto;
+    margin-bottom: 10px;
+    padding: 10px 0 20px 0;
+  }
+
+  .work #btn {
+    background-color: var(--purple);
+    padding: 10px 20px;
+    text-align: center;
+    width: 8em;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1em;
+    font-weight: 400;
+    display: inline-block;
+    transition: 0.5s;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+    margin-bottom: 20px;
+  }
+
+      .work #btn:hover {
+        opacity: 0.8;
+      }
+  /* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/* ===== Tablet and Desktop ===== */
+/* === Tablet === */
+@media only screen and (min-width: 768px) {
+    .menu {
+      flex-direction: row;
+    }
+
+        .menu li {
+          font-size: 1.5em;
+        }
+
+    .hero {
+      align-self: start;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+    }
+
+    .about {
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 1fr;
+      grid-gap: 2em;
+      height: 100vh;
+    }
+
+        .about p {
+          order: 1;
+        }
+
+        .about img {
+          order: 2;
+        }
+
+        .about .design {
+          order: 3;
+        }
+
+        .about .develop {
+          order: 4;
+        }
+
+    .work {
+      padding-bottom: 20px;
+    }
+
+    .work h2 {
+      padding-top: 20px;
+      font-size: 2em;
+    }
+
+    .projects {
+      display: grid;
+      grid-template: 1fr 1fr / 1fr 1fr;
+      grid-gap: 2em;
+    }
+
+    #btn {
+      margin: 20px 0;
+    }
+
+    .contact {
+      height: 50vh;
+    }
+
+    .contact h2 {
+      font-size: 2em;
+    }
+
+    .footer ul li {
+      padding: 0 20px;
+    }
+}
+
+/* === Desktop === */
+@media only screen and (min-width: 1600px) {
+    .about {
+      font-size: 1.5em;
+    }
+
+        .about .design p, .develop p {
+          padding: 0 80px;
+        }
+
+    .work {
+      height: auto;
+      overflow: hidden;
+      padding-top: 0;
+    }
+
+    .projects {
+      justify-content: center;
+
+      overflow: hidden;
+      grid-gap: 8em;
+    }
+
+    .square {
+      max-width: 600px;
+    }
+
+}

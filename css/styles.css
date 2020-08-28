@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "poppins", sans-serif;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+} 
+.navbar {
+  padding: .8rem;
+}
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+.logo {
+  color: var(--black);
+  padding: 10px;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 3px solid #00aced;
+  text-align: center;
+}
+
+ .logo a {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+#home {
+  position: relative;
+  width: 90%;
+  height: 100vh;
+  padding-left: 4rem;
+}
+.center {
+  padding: 3rem;
+  margin: 0 auto;
+  background-color: white;
+  align-items: left;
+  color: #222;
+  position: absolute;
+  top: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  
+}
+h1 {
+  font-size: 3rem;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+/*.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}*/
+#about, #portfolio, #contact {
+  padding-top: 4rem;
+}
+.vibes {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
+.btn-primary {
+  background-color: #00aced;
+  border: 1px solid #00aced;
+}
+.btn-primary:hover {
+  border: 1px solid #33c9ff;
+  background-color: #33c9ff;
+}
+
+.padding {
+  padding: 1rem;
+}
+#about {
+  padding-left: 2rem;
+}
+#portfolio {
+  background-color:  rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding-left: 2rem;
+}
+.card {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #00aced;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  transition:box-shadow .5s;
+}
+
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+
+#contact {
+  width: 75%;
+}
+.icon{
+  font-size: 1em;
+  padding-top: 1em;
+}
+.skills {
+  width: 100%;
+}
+.social {
+  font-size: 50px;
+  padding: 10px;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-linkedin {
+  color: #00aced;
+}
+.fa-github {
+  color: #00aced;
+}
+.fa-linkedin:hover, .fa-twitter:hover, .fa-github:hover {
+  transform: scale(1.5);
+}
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+#contact h2 {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+#contact span {
+  font-weight: 700;
+}
+#contact a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+@-webkit-keyframes menu-hover {
+  25% {
+    color:#1ec1e4
+  }
+  50% {
+    color:#fc0
+  }
+  75% {
+    color:#c7d405
+  }
+  100% {
+    color:#ee3db0
+  }
+}
+@-moz-keyframes menu-hover {
+  33% {
+    color:#1ec1e4
+  }
+  66% {
+    color:#fc0
+  }
+  75% {
+    color:#c7d405
+  }
+  100% {
+    color:#ee3db0
+  }
+}
+
+#email:hover {
+  -webkit-animation:menu-hover .8s infinite .1s alternate ease-in-out;
+  -moz-animation:menu-hover .8s infinite .1s alternate ease-in-out;
+  -o-animation:menu-hover .8s infinite .1s alternate ease-in-out;
+  -ms-animation:menu-hover .8s infinite .1s alternate ease-in-out;
+  animation:menu-hover .8s infinite .1s alternate ease-in-out;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
