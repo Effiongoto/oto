@@ -1,186 +1,229 @@
-<div class="container-fluid" id="contact">
-      <h2 class="text-center">Need a responsive, mobile-ready website?</h2>
-      <h2 class="text-center"><span>Let's work together!</span></h2>
-      <a id="email" href="mailto:hi@lesleyhogg.com" target="_blank">effiongoto98@gmail.com</a> <br>
-        <a href="https://www.linkedin.com/in/oto-obong-effiong-8a81151b0/"><i class="fab fa-linkedin social"></i></a>
-        <a href="https://twitter.com/iamoto"><i class="fab fa-twitter social"></i></a>
-        <a href="https://github.com/Effiongoto"><i class="fab fa-github social"></i></a>
-    </div>
-  .square {
-    position: relative;
-    box-sizing: border-box;
-    border: 1px solid var(--purple);
-    box-shadow: 0 0 4px rgba(0,0,0,0.5);
-    transition:box-shadow .5s;
-  }
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-  .square::before {
-    content: '';
-    display: block;
-    padding-top: 100%;
-  }
-
-  .square:hover {
-    box-shadow: 0 0 10px rgba(0,0,0,0.8);
-  }
-
-  .square img {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
-
-
-  .wrapper {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(12, 1fr);
-   }
- 
-       .wrapper > * {
-         grid-column: 3 / 11;
-       }
- 
-   img {
-     max-width: 100%;
-   }
-
-   .work {
-    background: var(--gray);
-    height: auto;
-    margin-bottom: 10px;
-    padding: 10px 0 20px 0;
-  }
-
-  .work #btn {
-    background-color: var(--purple);
-    padding: 10px 20px;
-    text-align: center;
-    width: 8em;
-    border-radius: 5px;
-    text-decoration: none;
-    color: var(--white);
-    font-size: 1em;
-    font-weight: 400;
-    display: inline-block;
-    transition: 0.5s;
-      -o-transition:.5s;
-      -ms-transition:.5s;
-      -moz-transition:.5s;
-      -webkit-transition:.5s;
-    margin-bottom: 20px;
-  }
-
-      .work #btn:hover {
-        opacity: 0.8;
-      }
-  /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-/* ===== Tablet and Desktop ===== */
-/* === Tablet === */
-@media only screen and (min-width: 768px) {
-    .menu {
-      flex-direction: row;
-    }
-
-        .menu li {
-          font-size: 1.5em;
-        }
-
-    .hero {
-      align-self: start;
-    }
-
-    .hero h1 {
-      font-size: 3em;
-    }
-
-    .about {
-      display: grid;
-      grid-template: 1fr 1fr / 1fr 1fr;
-      grid-gap: 2em;
-      height: 100vh;
-    }
-
-        .about p {
-          order: 1;
-        }
-
-        .about img {
-          order: 2;
-        }
-
-        .about .design {
-          order: 3;
-        }
-
-        .about .develop {
-          order: 4;
-        }
-
-    .work {
-      padding-bottom: 20px;
-    }
-
-    .work h2 {
-      padding-top: 20px;
-      font-size: 2em;
-    }
-
-    .projects {
-      display: grid;
-      grid-template: 1fr 1fr / 1fr 1fr;
-      grid-gap: 2em;
-    }
-
-    #btn {
-      margin: 20px 0;
-    }
-
-    .contact {
-      height: 50vh;
-    }
-
-    .contact h2 {
-      font-size: 2em;
-    }
-
-    .footer ul li {
-      padding: 0 20px;
-    }
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: "poppins", sans-serif;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+} 
+.navbar {
+  padding: .8rem;
+}
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+.logo {
+  color: var(--black);
+  padding: 10px;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 3px solid #00aced;
+  text-align: center;
 }
 
-/* === Desktop === */
-@media only screen and (min-width: 1600px) {
-    .about {
-      font-size: 1.5em;
-    }
+ .logo a {
+  font-weight: 700;
+  font-size: 1em;
+}
 
-        .about .design p, .develop p {
-          padding: 0 80px;
-        }
+#home {
+  position: relative;
+  width: 90%;
+  height: 100vh;
+  padding-left: 4rem;
+}
+.center {
+  padding: 3rem;
+  margin: 0 auto;
+  background-color: white;
+  align-items: left;
+  color: #222;
+  position: absolute;
+  top: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  
+}
+h1 {
+  font-size: 3rem;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+/*.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}*/
+#about, #portfolio, #contact {
+  padding-top: 4rem;
+}
+.vibes {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
+.btn-primary {
+  background-color: #00aced;
+  border: 1px solid #00aced;
+}
+.btn-primary:hover {
+  border: 1px solid #33c9ff;
+  background-color: #33c9ff;
+}
 
-    .work {
-      height: auto;
-      overflow: hidden;
-      padding-top: 0;
-    }
+.padding {
+  padding: 1rem;
+}
+#about {
+  padding-left: 2rem;
+}
+#portfolio {
+  background-color:  rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding-left: 2rem;
+}
+.card {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #00aced;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  transition:box-shadow .5s;
+}
 
-    .projects {
-      justify-content: center;
 
-      overflow: hidden;
-      grid-gap: 8em;
-    }
+.card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
 
-    .square {
-      max-width: 600px;
-    }
 
+#contact {
+  width: 75%;
+}
+.icon{
+  font-size: 1em;
+  padding-top: 1em;
+}
+.skills {
+  width: 100%;
+}
+.social {
+  font-size: 50px;
+  padding: 10px;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-linkedin {
+  color: #00aced;
+}
+.fa-github {
+  color: #00aced;
+}
+.fa-linkedin:hover, .fa-twitter:hover, .fa-github:hover {
+  transform: scale(1.5);
+}
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+#contact h2 {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+
+#contact span {
+  font-weight: 700;
+}
+#contact a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+@-webkit-keyframes menu-hover {
+  25% {
+    color:#1ec1e4
+  }
+  50% {
+    color:#fc0
+  }
+  75% {
+    color:#c7d405
+  }
+  100% {
+    color:#ee3db0
+  }
+}
+@-moz-keyframes menu-hover {
+  33% {
+    color:#1ec1e4
+  }
+  66% {
+    color:#fc0
+  }
+  75% {
+    color:#c7d405
+  }
+  100% {
+    color:#ee3db0
+  }
+}
+
+#email:hover {
+  -webkit-animation:menu-hover .8s infinite .1s alternate ease-in-out;
+  -moz-animation:menu-hover .8s infinite .1s alternate ease-in-out;
+  -o-animation:menu-hover .8s infinite .1s alternate ease-in-out;
+  -ms-animation:menu-hover .8s infinite .1s alternate ease-in-out;
+  animation:menu-hover .8s infinite .1s alternate ease-in-out;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+@media only screen and (max-width: 575px) {
+  .wrapper {
+    width: 100%;
+  }
+  #contact {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  #contact h2 {
+    font-size: 1.2em;
+  }
+  .cta {
+    display: ;
+  }
+  #home {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 370px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  #contact .email {
+    font-size: .9em;
+  }
+  .cta {
+    visibility: hidden; 
+  }
 }
